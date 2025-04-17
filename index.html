@@ -1,10 +1,156 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Free Website</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>This is my very first website hosted for free using GitHub Pages!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profit Plugs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff0033, #880000);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 0 0 20px red;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ffbbbb;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .product {
+      background: #1a1a1a;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.02);
+    }
+
+    .product h2 {
+      color: #ff4a4a;
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .paypal-button {
+      margin-top: 20px;
+    }
+
+    .paypal-button input[type="submit"] {
+      background-color: #ff0033;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .paypal-button input[type="submit"]:hover {
+      background-color: #cc002a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Profit Plugs</h1>
+    <p>Exclusive Vendor Access — Delivered Securely</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Shoe Vendor -->
+    <div class="product">
+      <h2>Shoe Vendor - $10.99</h2>
+      <p>This vendor provides reliable, affordable access to replica shoes.</p>
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="dragonslayer69423@gmail.com">
+          <input type="hidden" name="item_name" value="Shoe Vendor Access">
+          <input type="hidden" name="amount" value="10.99">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="return" value="https://yourusername.github.io/thankyou.html">
+          <input type="submit" value="Buy Now with PayPal">
+        </form>
+      </div>
+    </div>
+
+    <!-- Clothes Vendor -->
+    <div class="product">
+      <h2>Clothes Vendor - $10.99</h2>
+      <p>Access to a replica clothing vendor with verified products.</p>
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="dragonslayer69423@gmail.com">
+          <input type="hidden" name="item_name" value="Clothes Vendor Access">
+          <input type="hidden" name="amount" value="10.99">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="return" value="https://yourusername.github.io/thankyou.html">
+          <input type="submit" value="Buy Now with PayPal">
+        </form>
+      </div>
+    </div>
+
+    <!-- Cologne Vendor -->
+    <div class="product">
+      <h2>Cologne Vendor - $120.00</h2>
+      <p>Premium replica cologne vendor. High-end quality and presentation.</p>
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="dragonslayer69423@gmail.com">
+          <input type="hidden" name="item_name" value="Cologne Vendor Access">
+          <input type="hidden" name="amount" value="120.00">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="return" value="https://yourusername.github.io/thankyou.html">
+          <input type="submit" value="Buy Now with PayPal">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Profit Plugs. All rights reserved.
+  </footer>
+
+</body>
 </html>
