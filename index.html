@@ -1,10 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Free Website</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>This is my very first website hosted for free using GitHub Pages!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profit Plugs</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #ff0033, #aa0000);
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px red;
+    }
+
+    .product-list {
+      max-width: 800px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: #111;
+      padding: 20px;
+      border: 1px solid #ff0033;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    }
+
+    .product h2 {
+      margin-top: 0;
+      color: #ff4a4a;
+    }
+
+    .product a {
+      color: #ff8080;
+      text-decoration: underline;
+    }
+
+    .paypal-button {
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Profit Plugs</h1>
+    <p>Reliable Replica Vendor Connections</p>
+  </header>
+
+  <main class="product-list">
+    <!-- Product 1 -->
+    <div class="product">
+      <h2>Shoe Vendor - $10.99</h2>
+      <p><a href="https://docs.google.com/document/d/1AemuhIWEuWF5Tj0FsQxCLIO3ByUzaCmx4wqyJ0vWwSY/edit?tab=t.0" target="_blank">View Google Doc</a></p>
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="dragonslayer69423@gmail.com">
+          <input type="hidden" name="item_name" value="Shoe Vendor">
+          <input type="hidden" name="amount" value="10.99">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now with PayPal">
+        </form>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <h2>Clothes Vendor - $10.99</h2>
+      <p><a href="https://docs.google.com/document/d/1AemuhIWEuWF5Tj0FsQxCLIO3ByUzaCmx4wqyJ0vWwSY/edit?tab=t.0" target="_blank">View Google Doc</a></p>
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="dragonslayer69423@gmail.com">
+          <input type="hidden" name="item_name" value="Clothes Vendor">
+          <input type="hidden" name="amount" value="10.99">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now with PayPal">
+        </form>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <h2>Cologne Vendor - $120.00</h2>
+      <p><a href="https://docs.google.com/document/d/1AemuhIWEuWF5Tj0FsQxCLIO3ByUzaCmx4wqyJ0vWwSY/edit?tab=t.0" target="_blank">View Google Doc</a></p>
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="dragonslayer69423@gmail.com">
+          <input type="hidden" name="item_name" value="Cologne Vendor">
+          <input type="hidden" name="amount" value="120.00">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now with PayPal">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Profit Plugs. All rights reserved.
+  </footer>
+
+</body>
 </html>
